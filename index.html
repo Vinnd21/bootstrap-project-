@@ -7,86 +7,118 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Pokedex.proj</title>
 </head>
-<body>
-    <div class="">
-        <div class="">
-            <h1>pokedex</h1>
-        </div>
-        <form class="form" action="search" method="get">
-            <input 
-            id="search_pokemon" 
-            type="text"
-            name="query"
-            class="search-bar"
-            placeholder="search pokemon...">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+<body class=" bg-light text-dark">
+    <h1 class="text-center text-danger text-uppercase fw-bold mb-4 display-2 text-shadow">
+        pokedex
+    </h1>
+    <div class="container py-4">
+        <form class="d-flex justify-content-center mb-4 position-relative mx-auto" action="search" method="get" style="max-width:600px;">
+        <input 
+        type="text" 
+        name="query" 
+        placeholder="Search pokemon..." 
+        class="form-control rounded-pill shadow-sm px-4">
+        <button type="submit" class="btn text-danger position-absolute end-0 top-50 translate-middle-y me-2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
         </form>
-        <div class="">
-            <a href="#"><h2>Nationaldex</h2></a>
+        <div class="text-center mb-4">
+            <a href="#" class="btn btn-outline-danger fw-bold px-4 py-2 rounded-pill">
+                Nationaldex
+            </a>
         </div>
-        <div class="">
-            <h2>Regionaldex</h2>
-        </div>
-        <div class="">
-            <div>
-                <div class="">Kanto</div>
-                <img class="" src="/pokeImages/1.png" alt="">
-                <img class="" src="/4.png" alt="">
-                <img class="" src="/7.png" alt="">
+        <h2 class="text-center text-uppercase fw-bold mb-4">Regionaldex</h2>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-3 text-center p-3 h-100">
+                <h5 class="fw-bold mb-3 text-capitalize">Kanto</h5>
+                <div class="d-flex justify-content-around">
+                    <img src="/1 (1).png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/4.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/7.png" class="img-fluid" style="max-width:70px;" alt="">
+                </div>
             </div>
-            <div class="">
-                <a href=""></a>
-                <div class="">Johto</div>
-                <img class="" src="/152.png" alt="">
-                <img class="" src="/155.png" alt="">
-                <img class="" src="/158.png" alt="">
+      </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-3 text-center p-3 h-100">
+                <h5 class="fw-bold mb-3 text-capitalize">Johto</h5>
+                <div class="d-flex justify-content-around">
+                    <img src="/152.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/155.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/158.png" class="img-fluid" style="max-width:70px;" alt="">
+                </div>
             </div>
-            <div class="">
-                <div class="">hoenn</div>
-                <img class="" src="/252.png" alt="">
-                <img class="" src="/255.png" alt="">
-                <img class="" src="/258.png" alt="">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-3 text-center p-3 h-100">
+                <h5 class="fw-bold mb-3 text-capitalize">Hoenn</h5>
+                <div class="d-flex justify-content-around">
+                    <img src="/252.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/255.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/258.png" class="img-fluid" style="max-width:70px;" alt="">
+                </div>
             </div>
-            <div class="">
-                <div class="">sinnoh</div>
-                <img class="" src="/55px-0387Turtwig.png" alt="">
-                <img class="" src="/55px-0390Chimchar.png" alt="">
-                <img class="" src="/55px-0393Piplup.png" alt="">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-3 text-center p-3 h-100">
+                <h5 class="fw-bold mb-3 text-capitalize">Sinnoh</h5>
+                <div class="d-flex justify-content-around">
+                    <img src="/55px-0387Turtwig.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/55px-0390Chimchar.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/55px-0393Piplup.png" class="img-fluid" style="max-width:70px;" alt="">
+                </div>
             </div>
-            <div class="">
-                <div class="">unova</div>
-                <img class="" src="/55px-0495Snivy.png" alt="">
-                <img class="" src="/55px-0498Tepig.png" alt="">
-                <img class="" src="/55px-0501Oshawott.png" alt="">
-               
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-3 text-center p-3 h-100">
+                <h5 class="fw-bold mb-3 text-capitalize">Unova</h5>
+                <div class="d-flex justify-content-around">
+                    <img src="/55px-0495Snivy.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/55px-0498Tepig.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/55px-0501Oshawott.png" class="img-fluid" style="max-width:70px;" alt="">
+                </div>
             </div>
-            <div class="">
-                <div class="">kalos</div>
-                <img class="" src="/55px-0650Chespin.png" alt="">
-                <img class="" src="/55px-0653Fennekin.png" alt="">
-                <img class="" src="/55px-0656Froakie.png" alt="">
-                
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-3 text-center p-3 h-100">
+                <h5 class="fw-bold mb-3 text-capitalize">Kalos</h5>
+                <div class="d-flex justify-content-around">
+                    <img src="/55px-0650Chespin.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/55px-0653Fennekin.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/55px-0656Froakie.png" class="img-fluid" style="max-width:70px;" alt="">
+                </div>
             </div>
-            <div class="">
-                <div class="">alola</div>
-                <img class="" src="/55px-0722Rowlet (1).png" alt="">
-                <img class="" src="/55px-0725Litten.png" alt="">
-                <img class="" src="/55px-0728Popplio.png" alt="">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-3 text-center p-3 h-100">
+                <h5 class="fw-bold mb-3 text-capitalize">Alola</h5>
+                <div class="d-flex justify-content-around">
+                    <img src="/55px-0722Rowlet (1).png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/55px-0725Litten.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/55px-0728Popplio.png" class="img-fluid" style="max-width:70px;" alt="">
+                </div>
             </div>
-            <div class="">
-                <div class="">galar</div>
-                <img class="" src="/55px-0810Grookey.png" alt="">
-                <img class="" src="/55px-0813Scorbunny.png" alt="">
-                <img class="" src="/55px-0816Sobble.png" alt="">
-                
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-3 text-center p-3 h-100">
+                <h5 class="fw-bold mb-3 text-capitalize">Galar</h5>
+                <div class="d-flex justify-content-around">
+                    <img src="/55px-0810Grookey.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/55px-0813Scorbunny.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/55px-0816Sobble.png" class="img-fluid" style="max-width:70px;" alt="">
+                </div>
             </div>
-            <div class="">
-                <div class="">paldea</div>
-                <img class="" src="/55px-0906Sprigatito.png" alt="">
-                <img class="" src="/55px-0909Fuecoco.png" alt="">
-                <img class="" src="/55px-0912Quaxly.png" alt="">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-3 text-center p-3 h-100">
+                <h5 class="fw-bold mb-3 text-capitalize">Paldea</h5>
+                <div class="d-flex justify-content-around">
+                    <img src="/55px-0906Sprigatito.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/55px-0909Fuecoco.png" class="img-fluid" style="max-width:70px;" alt="">
+                    <img src="/55px-0912Quaxly.png" class="img-fluid" style="max-width:70px;" alt="">
+                </div>
             </div>
-        </div>
+      </div>
+   
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
